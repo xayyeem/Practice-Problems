@@ -1,7 +1,7 @@
 class Solution
 {
 public:
-    // Function to rotate a linked list.
+    // QUESTION ::::Function to rotate a linked list.
     Node *rotate(Node *head, int k)
     {
         Node *current = head;
@@ -22,4 +22,7 @@ public:
 
         return head;
     }
+    // I/P: 1->2->4->6->7 , K=1
+    // NOW WE ROTATE THE LINKED LIST ELEMENTS BY POSITION 1 TOWARDS LEFT
+    //  HENCE WE GET THE OUTPUT AS 2->4->6->7->1
 };
