@@ -1,3 +1,4 @@
+//Problem Link : https://practice.geeksforgeeks.org/problems/right-view-of-binary-tree/1?utm_source=gfg&utm_medium=article&utm_campaign=bottom_sticky_on_article
 #include <bits/stdc++.h>
 using namespace std;
 struct Node
@@ -51,3 +52,19 @@ int main()
 
     return 0;
 }
+//Example 1:
+
+// Input:
+//        1
+//     /    \
+//    3      2
+// Output: 1 2
+// Example 2:
+
+// Input:
+//      10
+//     /   \
+//   20     30
+//  /   \
+// 40  60 
+// Output: 10 30 60
