@@ -1,4 +1,6 @@
-// A C++ program for Dijkstra's single source shortest path algorithm.
+/* PROBLEM STATEMENT - Dijkstra's algorithm is an algorithm that is used to solve the shortest distance problem. 
+That is, we use it to find the shortest distance between two vertices on a graph. Depending on what the graph represents, 
+we can find shortest routes, minimum costs, etc. all using this algorithm.*/
 // The program is for adjacency matrix representation of the graph
 
 #include<iostream>
@@ -23,7 +25,7 @@ int minDistance(int dist[], bool sptSet[])
 }
 
 // A utility function to print the constructed distance array
-int printSolution(int dist[], int n)
+void printSolution(int dist[], int n)
 {
 	printf("Vertex Distance from Source\n");
 	for (int i = 0; i < V; i++)
@@ -89,3 +91,17 @@ int main()
 
 	return 0;
 }
+
+// Sample Output for the input in main() function ->
+
+// Vertex   Distance from Source
+// 0 		 	0
+// 1 		 	4
+// 2 		 	12
+// 3 		 	19
+// 4 		 	21
+// 5 		 	11
+// 6 		 	9
+// 7 		 	8
+// 8 		 	14
+
