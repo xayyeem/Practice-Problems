@@ -1,22 +1,22 @@
+//Convert the 12hour clock to 24hour clock
+
 #include <bits/stdc++.h>
 using namespace std;
 
-int changeint(string st){  //returns the hour
+int changeint(string st){  //convert string to int
     int x = 0;
     stringstream str(st);   
     str >> x;
     return x;
 }
 
-string changestr(int n){  //changes hour to string
+string changestr(int n){  //convert int to string
     ostringstream ss;
     ss<<n;
     return ss.str();
 }
-// 0 1 2 3 4 5 6 7 8 9
-// 1 2 : 0 0 : 0 0 P M
 
-string timeConversion(string s)
+string timeConversion(string s) //12h to 24h
 {
     string final;
     int hour=changeint(s)+12;
@@ -40,11 +40,23 @@ string timeConversion(string s)
 
 int main(){
     ofstream fout(getenv("OUTPUT_PATH"));
+    cout<<"Enter time in 12hour Fromat: \n";
     string s;
     getline(cin, s);
     string result = timeConversion(s);
+    cout<<"24hour format: \n";
     cout<<result<<endl;
-    fout << result << "\n";
+    fout << result << endl;
     fout.close();
     return 0;
 }
+
+/*
+Sample case 1:
+Enter time in 12hour Fromat: 01:19:04PM
+24hour format: 13:19:04
+
+Sample case 2:
+Enter time in 12hour Fromat: 12:20:08AM
+24hour format: 12:20:08
+*/
