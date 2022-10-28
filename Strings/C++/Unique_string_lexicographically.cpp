@@ -15,3 +15,20 @@ int main(){
 	}
 	return 0;
 }
+
+/*INPUT OF PROGRAM
+	5
+	abc
+	abc
+	fgh
+	def
+	acd
+*/
+
+/*OUTPUT OF PROGRAM
+	abc
+	acd
+	def
+	fgh
+
+*/
