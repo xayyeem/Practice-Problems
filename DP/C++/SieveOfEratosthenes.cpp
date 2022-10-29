@@ -1,5 +1,6 @@
-// C++ program to print all primes smaller than or equal to
-// n using Sieve of Eratosthenes
+//Problem Statement : Given a number n, print all primes smaller than or equal to n. It is also given that n is a small number. 
+
+
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -30,9 +31,20 @@ void SieveOfEratosthenes(int n)
 // Driver Code
 int main()
 {
-	int n = 75;
+	int n ;
+	cin >> n ;
 	cout << "Following are the prime numbers smaller "
 		<< " than or equal to " << n << endl;
 	SieveOfEratosthenes(n);
 	return 0;
 }
+
+/* Input : n =10
+Output : Following are the prime numbers smaller than or equal to 10
+	 2 3 5 7 
+
+Input : n = 20 
+Output: Following are the prime numbers smaller than or equal to 10
+	2 3 5 7 11 13 17 19
+
+*/
