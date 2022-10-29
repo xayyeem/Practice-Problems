@@ -1,3 +1,5 @@
+//Problem Statement : Given a circular linked list , delete its last node. The last node refers to the node before the head in this case .
+
 #include <bits/stdc++.h>
 using namespace std ;
 
@@ -7,6 +9,7 @@ struct ListNode
     int data;
     struct ListNode *next;
 };
+
 void show(struct ListNode *head)
 {
     struct ListNode *cur;
@@ -14,7 +17,7 @@ void show(struct ListNode *head)
 
     do
     {
-        printf("Displaying data in the node : %d\n", cur->data);
+        cout << cur->data << "->" ;
         cur = cur->next;
     } while (cur != head);
 }
@@ -37,7 +40,6 @@ void deleteAtLast(struct ListNode *head)
     free(curr);
     return;
 
-    //return head;
 }
 int main()
 {
@@ -63,11 +65,17 @@ int main()
 
     last->next = head;
 
-    show(head);
-    printf("List after deletion :\n");
+    cout << "List after deletion :\n" ;
 
     deleteAtLast(head);
     show(head);
 
     return 0;
 }
+
+/* Input : 39->298->13->167->6739->
+
+   Output : List after deletion :
+            39->298->13->167->
+            
+*/
