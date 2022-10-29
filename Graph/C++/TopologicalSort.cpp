@@ -1,4 +1,6 @@
-// A C++ program to print topological sorting of a DAG
+// Problem Statement : For a given Directed Acyclic Graph , print topological sort of the same.
+
+
 #include <iostream>
 #include <list>
 #include <stack>
@@ -88,8 +90,18 @@ int main()
 	g.addEdge(2, 3);
 	g.addEdge(3, 1);
 
-	cout << "Following is a Topological Sort of the given graph n";
+	cout << "Following is a Topological Sort of the given graph ";
 	g.topologicalSort();
 
 	return 0;
 }
+
+		    2 -> 3 -> 1
+/* Input : Graph :  ^         ^
+		    |         |
+		    5 -> 0 <- 4
+		    
+   Output : Following is a Topological Sort of the given graph 5 4 2 3 1 0  
+   P.S - There could be more than one topological sort for a graph
+   
+*/
