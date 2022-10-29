@@ -1,3 +1,7 @@
+/*
+	Program for (2*2) Matrix Multiplication by Strassen Method
+*/
+
 #include<bits/stdc++.h>
 using namespace std;
 
