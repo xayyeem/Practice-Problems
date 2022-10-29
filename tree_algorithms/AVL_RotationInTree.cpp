@@ -1,3 +1,5 @@
+// Program to show AVL rotation in a tree.
+
 #include<iostream>
 #include<cstdio>
 #include<sstream>
@@ -188,3 +190,146 @@ int main() {
    }
    return 0;
 }
+
+
+/* Output 
+1.Insert Element into the tree
+2.show Balanced AVL Tree
+3.InOrder traversal
+4.PreOrder traversal
+5.PostOrder traversal
+6.Exit
+Enter your Choice: 1
+Enter value to be inserted: 13
+1.Insert Element into the tree
+2.show Balanced AVL Tree
+3.InOrder traversal
+4.PreOrder traversal
+5.PostOrder traversal
+6.Exit
+Enter your Choice: 1
+Enter value to be inserted: 10
+1.Insert Element into the tree
+2.show Balanced AVL Tree
+3.InOrder traversal
+4.PreOrder traversal
+5.PostOrder traversal
+6.Exit
+Enter your Choice: 1
+Enter value to be inserted: 15
+1.Insert Element into the tree
+2.show Balanced AVL Tree
+3.InOrder traversal
+4.PreOrder traversal
+5.PostOrder traversal
+6.Exit
+Enter your Choice: 1
+Enter value to be inserted: 5
+1.Insert Element into the tree
+2.show Balanced AVL Tree
+3.InOrder traversal
+4.PreOrder traversal
+5.PostOrder traversal
+6.Exit
+Enter your Choice: 1
+Enter value to be inserted: 11
+1.Insert Element into the tree
+2.show Balanced AVL Tree
+3.InOrder traversal
+4.PreOrder traversal
+5.PostOrder traversal
+6.Exit
+Enter your Choice: 1
+Enter value to be inserted: 4
+Left-Left Rotation1.Insert Element into the tree
+2.show Balanced AVL Tree
+3.InOrder traversal
+4.PreOrder traversal
+5.PostOrder traversal
+6.Exit
+Enter your Choice: 1
+Enter value to be inserted: 8
+1.Insert Element into the tree
+2.show Balanced AVL Tree
+3.InOrder traversal
+4.PreOrder traversal
+5.PostOrder traversal
+6.Exit
+Enter your Choice: 1
+Enter value to be inserted: 16
+1.Insert Element into the tree
+2.show Balanced AVL Tree
+3.InOrder traversal
+4.PreOrder traversal
+5.PostOrder traversal
+6.Exit
+Enter your Choice: 3
+Inorder Traversal:
+4 5 8 10 11 13 15 16
+1.Insert Element into the tree
+2.show Balanced AVL Tree
+3.InOrder traversal
+4.PreOrder traversal
+5.PostOrder traversal
+6.Exit
+Enter your Choice: 4
+Preorder Traversal:
+10 5 4 8 13 11 15 16
+1.Insert Element into the tree
+2.show Balanced AVL Tree
+3.InOrder traversal
+4.PreOrder traversal
+5.PostOrder traversal
+6.Exit
+Enter your Choice: 5
+Postorder Traversal:
+4 8 5 11 16 15 13 10
+1.Insert Element into the tree
+2.show Balanced AVL Tree
+3.InOrder traversal
+4.PreOrder traversal
+5.PostOrder traversal
+6.Exit
+Enter your Choice: 1
+Enter value to be inserted: 14
+1.Insert Element into the tree
+2.show Balanced AVL Tree
+3.InOrder traversal
+4.PreOrder traversal
+5.PostOrder traversal
+6.Exit
+Enter your Choice: 1
+Enter value to be inserted: 3
+1.Insert Element into the tree
+2.show Balanced AVL Tree
+3.InOrder traversal
+4.PreOrder traversal
+5.PostOrder traversal
+6.Exit
+Enter your Choice: 1
+Enter value to be inserted: 7
+1.Insert Element into the tree
+2.show Balanced AVL Tree
+3.InOrder traversal
+4.PreOrder traversal
+5.PostOrder traversal
+6.Exit
+Enter your Choice: 1
+Enter value to be inserted: 9
+1.Insert Element into the tree
+2.show Balanced AVL Tree
+3.InOrder traversal
+4.PreOrder traversal
+5.PostOrder traversal
+6.Exit
+Enter your Choice: 1
+Enter value to be inserted: 52
+Right-Right Rotation
+1.Insert Element into the tree
+2.show Balanced AVL Tree
+3.InOrder traversal
+4.PreOrder traversal
+5.PostOrder traversal
+6.Exit
+Enter your Choice: 6
+*/
