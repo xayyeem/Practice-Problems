@@ -26,7 +26,7 @@ void inOrder(struct bin_searchTreeNode *root)
     if(root != NULL)
     {
         inOrder(root->left) ;
-        printf("%d " , root->data) ;
+        cout << root->data << " " ;
         inOrder(root->right) ;
     }
 }
@@ -107,17 +107,11 @@ int main()
     root = insert(root, 70);
     root = insert(root, 60);
     root = insert(root, 80);
-  
-    cout << "Inorder traversal of the given tree \n";
+ 
     inOrder(root);
   
     cout << "\nDelete 20\n";
     root = deleteNode(root, 20);
-    cout << "Inorder traversal of the modified tree \n";
-    inOrder(root);
-  
-    cout << "\nDelete 30\n";
-    root = deleteNode(root, 30);
     cout << "Inorder traversal of the modified tree \n";
     inOrder(root);
   
@@ -128,3 +122,23 @@ int main()
   
     return 0;
 }
+
+
+/* Input :            50
+                   /     \
+                  30     70
+                 / \     / \
+                20 40   60  80
+                
+               20 30 40 50 60 70 80
+                
+                
+   Output : Delete 20
+            Inorder traversal of the modified tree
+            30 40 50 60 70 80
+            
+            Delete 50
+            Inorder traversal of the modified tree
+            30 40 60 70 80
+            
+ */
