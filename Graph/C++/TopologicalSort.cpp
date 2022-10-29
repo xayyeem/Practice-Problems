@@ -96,8 +96,10 @@ int main()
 	return 0;
 }
 
+
+/*
 		    2 -> 3 -> 1
-/* Input : Graph :  ^         ^
+ Input : Graph :    ^         ^
 		    |         |
 		    5 -> 0 <- 4
 		    
