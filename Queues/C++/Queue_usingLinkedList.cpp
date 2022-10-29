@@ -1,3 +1,6 @@
+// Problem Statement : Build a queue using Linked List .
+
+
 #include <bits/stdc++.h>
 using namespace std ;
 
@@ -104,7 +107,7 @@ void deQueue(struct Queue *Q)
         if (Q->front == NULL)
             Q->rear = NULL;
 
-        printf("Removed element : %d\n", tmp->data);
+        cout << "Removed element : \n" << tmp->data;
         free(tmp);
     }
 }
@@ -119,11 +122,8 @@ void printQueue(struct Queue *Q)
     }
     while (tmp != NULL)
     {
-        printf("%d", tmp->data);
+        cout << tmp->data << " " ;
         tmp = tmp->next;
-
-        if (tmp != NULL)
-            printf("->");
     }
 }
 
@@ -133,7 +133,6 @@ void deleteQueue(struct Queue *Q)
     while (!Q->front)
     {
         tmp = Q->front;
-        printf("Element being deleted : %d\n", tmp->data);
         Q->front = Q->front->next;
         free(tmp);
     }
@@ -158,12 +157,10 @@ int main()
     //Printing Queue
     printQueue(Q);
 
-    //Printing size of the Queue .
-    printf("\nSize of the queue is %d\n", size(Q));
 
     //Printing front & rear Element in the Queue
-    printf("Front Element : %d\n", frntEle(Q));
-    printf("Rear Element : %d\n", rearEle(Q));
+    cout << "Front Element : \n" << frntEle(Q);
+    cout << "Rear Element : \n" << rearEle(Q);
 
     // Dequeueing element
     deQueue(Q);
@@ -173,10 +170,24 @@ int main()
     // deQueue(Q);
 
     printQueue(Q);
-    printf("\nSize of the queue is %d\n", size(Q));
+    cout << "\nSize of the queue is " << size(Q) ;
 
     //Deleting the Queue .
     deleteQueue(Q);
 
     return 0;
 }
+
+/* Input : Q : 1 19 15 1113 801 78
+
+   Output : Front Element : 1
+            Rear Element : 78
+            Removed Element : 1
+            Removed Element : 19
+            Removed Element : 15
+            Removed Element : 1113
+            Q : 801 78
+            Size of the queue is 2 
+    
+ */
+   
