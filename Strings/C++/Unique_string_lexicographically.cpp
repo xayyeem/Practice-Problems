@@ -1,3 +1,7 @@
+/*
+	Program to print unique strings in lexicographical order
+*/
+
 #include<bits/stdc++.h>
 using namespace std;
 
